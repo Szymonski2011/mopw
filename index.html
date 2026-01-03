@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Młodzieżowy Ośrodek Polityki Wschodniej </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --black: #00416a;
+            --white: #ffffff;
+            --gray: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: var(--gray);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: var(--black);
+            color: var(--white);
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--gray);
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <header>
+    <img src="grafiki/MOPW.png" alt="Logo MOPW" class="logo">
+    <h1> </h1>
+    <p>
+        Projekt analityczny zrzeszający młodych ludzi zainteresowanych
+        światem, polityką, konfliktami i propagandą.
+    </p>
+</header>
+
+</header>
+
+<section>
+    <h2>O nas</h2>
+    <p>
+        MOPW to niezależna inicjatywa edukacyjna dla osób w wieku 13–18 lat.
+        Działamy zespołowo, analizujemy wydarzenia międzynarodowe
+        i uczymy się krytycznego myślenia.
+    </p>
+</section>
+
+<section>
+    <h2>Zespoły</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Zespół Rosyjski</h3>
+            <p>Analiza polityki, propagandy i społeczeństwa Rosji.</p>
+        </div>
+
+        <div class="card">
+            <h3>Zespół Chiński</h3>
+            <p>Chiny, Azja Wschodnia i rywalizacja globalna.</p>
+        </div>
+
+        <div class="card">
+            <h3>Zespół Mołdawski</h3>
+            <p>Zespół pilotażowy – start projektu.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Artykuły</h2>
+
+    
+        <h3>Dlaczego Rosja potrzebuje wojny?</h3>
+		<img src="grafiki/Dlaczego system putina potrzebuje wojny.png">
+        <p>Analiza systemu władzy Putina.</p>
+        <a href="artykuly/Dlaczego Rosja potrzebuje wojny.pdf">Czytaj →</a>
+    
+</section>
+
+<section>
+    <h2>Rekrutacja</h2>
+    <p>
+        Aby zostać ekspertem, należy przejść szkolenie i napisać pracę końcową.
+        Szukamy osób zaangażowanych, nie „wszystkowiedzących”.
+    </p>
+
+    <button onclick="showInfo()">Jak dołączyć</button>
+</section>
+
+<footer>
+    © 2026 MOPW – projekt edukacyjny
+</footer>
+
+<script>
+    function showInfo() {
+        alert(
+            "Rekrutacja odbywa się przez Discord.\n\n" +
+            "1. Dołącz do serwera\n" +
+            "2. Wybierz zespół\n" +
+            "3. Przejdź szkolenie\n" +
+            "4. Zostań ekspertem"
+        );
+    }
+</script>
+
+</body>
+</html>
